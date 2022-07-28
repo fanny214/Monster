@@ -23,7 +23,7 @@ let special = false;
 //Les entités
 let hero = null;
 let actualEnemy;
-
+//utuftu
 /**
  * SELECTEUR DE BASES
  */
