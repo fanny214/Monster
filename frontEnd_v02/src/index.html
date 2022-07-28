@@ -9,45 +9,68 @@
     <link type="text/css" rel="stylesheet" href="style.css">
     <title>Fighting surface</title>
 </head>
-
+   
 <body class="nes-pointer">
-
-    <div class="arcade1 ">
+    
+<!-- page 1 -->
+    <div class="arcade1">
         <div class="row">
-            <button type="button" class="nes-btn is-warning">Jouer</button>
+            <button type="button" class="nes-btn is-warning jouer">Jouer</button>
             <button type="button" class="nes-btn is-warning">Score</button>
             <button type="button" class="nes-btn is-warning">Crédit</button>
         </div>
     </div>
+<!-- page 2 -->
+    <!-- <div class="arcade2 tabl hidden ">
 
-    <div class="arcade2">
-
-        <div class="nes-table-responsive">
+    <div class="nes-table-responsive">
             <table class="nes-table is-bordered is-dark">
                 <thead>
-                    <tr>
-                        <th>Table.is-dark</th>
-                        <th>Table.is-bordered</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Thou hast had a good morning</td>
-                        <td>Thou hast had a good afternon</td>
-                    </tr>
-                    <tr>
-                        <td>Thou hast had a good morning</td>
-                        <td>Thou hast had a good afternoon</td>
-                    </tr>
-                </tbody>
+                <tr>
+                    <th>Pseudo</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Truite</td>
+                    <td>5456</td>
+                </tr>
+                <tr>
+                    <td>To weak</td>
+                    <td>2560</td>
+                </tr>
+                <tr>
+                    <td>To strong</td>
+                    <td>9860</td>
+                </tr>
+            </tbody>
             </table>
-        </div>
-
-
     </div>
+    <div class="row">
+        <button type="button" class="nes-btn is-warning">Retour au menu</button>
+    </div>
+    </div>
+    -->
+
+<!-- page 3 -->
+<!-- <div class="arcade3 hidden ">
+
+    <div class="nes-container is-dark with-title">
+        <p class="title">Votre score</p>
+            <div class="nes-field">
+                <p class="title">Merci d'entrez votre pseudo</p>
+                <input type="text" id="name_field" class="nes-input">
+            </div>
+                <button type="button" class="nes-btn is-success">Envoie</button>
+                <button type="button" class="nes-btn is-error">Quitter</button>
+      </div>
+</div> -->
+
+<!-- page 4  -->
 
 
-    <article class="nes-container with-title is-centered is-dark">
+    <article class="nes-container with-title is-centered is-dark ">
         <p class="title">Status</p>
         <p class="status-bar">Bienvenue dans Fighting Surface</p>
     </article>
@@ -56,40 +79,40 @@
             <!-- <img src="img/barzork_bourrin.png" alt="" class="dead-enemy"> -->
 
         </article>
-        <section class="allies ">
+<section class="allies ">
 
-            <article class="action">
-                <button type="button" class="nes-btn is-disabled  attack-js">Attack</button>
+    <article class="action">
+            <button type="button" class="nes-btn is-disabled  attack-js">Attack</button>
                 <!-- Doit être gris par default une fois 5 attaque si le combat est encore ok alors il est activé-->
-                <button type="button" class="nes-btn is-disabled special-js">Special</button>
-            </article>
-            <article>
-                <h2 class="allies-pp"></h2>
-                <img src="img/fighter.png" alt="">
-            </article>
-            <article class="life-bar">
-                <label for="allies-bar">Point de vie</label>
-                <progress class="nes-progress is-success" id="allies-bar" max="100" value="70"> 70% </progress>
-            </article>
-        </section>
-        <section class="turn-arrow none">
+            <button type="button" class="nes-btn is-disabled special-js">Special</button>
+    </article>
+    <article>
+            <h2 class="allies-pp"></h2>
+            <img src="img/fighter.png" alt="">
+    </article>
+    <article class="life-bar">
+            <label for="allies-bar">Point de vie</label>
+            <progress class="nes-progress is-success" id="allies-bar" max="100" value="70"> 70% </progress>
+    </article>
+</section>
+<section class="turn-arrow none">
             <img src="img/arrow.png" alt="">
-        </section>
-        <section class="enemy none">
-            <article>
-                <button type="button" class="nes-btn is-warning enemies-generator ">Genere un adversaire</button>
-            </article>
-            <article class="disable">
-                <h2 class="enemy-title"></h2>
-                <img src="" alt="" class="enemy-pp">
-            </article>
-            <article class="life-bar disable">
-                <label for="enemy-bar">Point de vie</label>
-                <progress class="nes-progress is-success" id="enemy-bar" max="100" value="70">
+</section>
+<section class="enemy none">
+    <article>
+            <button type="button" class="nes-btn is-warning enemies-generator ">Genere un adversaire</button>
+    </article>
+    <article class="disable">
+            <h2 class="enemy-title"></h2>
+            <img src="" alt="" class="enemy-pp">
+    </article>
+    <article class="life-bar disable">
+            <label for="enemy-bar">Point de vie</label>
+            <progress class="nes-progress is-success" id="enemy-bar" max="100" value="70">
                     <p>70%</p>
-                </progress>
-            </article>
-        </section>
+            </progress>
+    </article>
+</section>
     </main>
 
 

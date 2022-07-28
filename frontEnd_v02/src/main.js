@@ -59,7 +59,27 @@ document.querySelector(".arcade1").classList.add("annim");
  * ! SUITE
  * TODO: Evenement pour gerer le bouton highscore du menu
  * * 1 - Fait disparaitre le menu et apparaitre le tableau
+ * 
  */
+
+ let button = document.querySelector('.jouer');
+
+ button.addEventListener('click', event => {
+  function verifPseudo(){
+      // pour faire l'animation
+        document.querySelector('.arcade1').classList.add('animation');
+        // attend la fin de l'animation pour lancer
+        setTimeout(()=>{
+          // enleve le score ect
+          document.querySelector(".arcade1").style.display = 'none';
+          // remet en visible le jeux
+      document.querySelector(".hidden").style.visibility = 'visible';
+      // genere un enemie
+      },1000);
+     } return verifPseudo();
+ });
+
+
 /**
  * ! SUITE
  * TODO: Evenement pour gerer le bouton crédit du menu
